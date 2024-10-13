@@ -1,14 +1,37 @@
+# SISEDU
 
-# COMO RODAR O PROJETO
+## Instalando
 
-1 - duplique o arquivo .env.example e renomeie ele para .env;
+### 1. Clonando projeto
 
-2 - instale o node https://nodejs.org/pt e o  composer https://getcomposer.org/download/;
+```bash
+    git clone https://github.com/GabrielFogo/sisedu.git
+    cd sisedu
+```
 
-3 - rode o comando no terminal dentro da pasta do projeto npm install e aguarda instalar
+### 2. Instalando as dependências
 
-4 - rode o comando no terminal dentro da pasta do projeto composer install e aguarda instalar;
+```bash
+    composer install
+    npm install
+```
 
-5 - em seguida após instalar tudo, rode o comando no terminal php artisan migrate para criar o banco e as suas tabelas;
+### 3. Clone o .env.example e configure o seu banco
 
-6 - FIM
+```bash
+   cp .env.example .env
+```
+
+### 4. Rode as migrations
+
+```bash
+    php artisan migrate
+```
+
+### 5. Inicie o projeto
+
+
+```bash
+    npm run dev
+    php artisan serve
+```
